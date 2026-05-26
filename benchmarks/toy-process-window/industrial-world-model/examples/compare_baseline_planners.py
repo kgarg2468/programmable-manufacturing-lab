@@ -64,7 +64,7 @@ def best_candidate(planner: str, actions: np.ndarray) -> CandidateResult:
         quality=best.quality,
         defect_risk=best.defect_risk,
         objective=best.objective,
-        feasible=feasible_count > 0,
+        feasible=best.feasible,
         evaluated=best.evaluated,
     )
 
